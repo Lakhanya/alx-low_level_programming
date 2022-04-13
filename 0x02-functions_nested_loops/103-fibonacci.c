@@ -2,7 +2,7 @@
 
 /**
  * main - Prints the sum of even valued Fibonacci sequence
- * terms not exceeding 4,000,000. 
+ * terms not exceeding 4,000,000
  *
  * Return: (0)
  */
