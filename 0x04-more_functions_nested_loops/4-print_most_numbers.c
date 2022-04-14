@@ -1,27 +1,26 @@
 #include "main.h"
 
 /**
-  * prints_most_numbers - prints zero to nine except 2 and 4
-  * 
+  * print_most_numbers - prints except 2 and 4.
+  *
   * Return: Always 0 (success)
   */
 
 void print_most_numbers(void)
 {
-	int = i;
+	int i;
 
-	i = 0;
+	i =0;
 
-	while (i < 10)
+	for (i =0; i < 10; i++)
 	{
+		if (i == 2 || i == 4)
 
-		if (i != 2 && i != 4)
-		{
+			i++;
+
 		_putchar(i + '0');
-		}
-		i++;
-	}
 
+	}
 	_putchar('\n');
 
 }
