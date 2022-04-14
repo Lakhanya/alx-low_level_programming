@@ -2,7 +2,7 @@
 
 /**
   * more_numbers - prints numbers 0 to 14 10 times
-  * 
+  *
   * Return: void
   */
 
@@ -14,7 +14,7 @@ void more_numbers(void)
 	{
 		for (i = 0; i <= 1; i++)
 		{
-			(j = 0; j <= 9; j++)
+			for (j = 0; j <= 9; j++)
 			{
 				if (!(i == 1 && j >= 5))
 				{
