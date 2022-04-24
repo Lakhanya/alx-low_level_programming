@@ -1,14 +1,14 @@
 #include "main.h"
 /**
- * cap_string - capatalises the words of a string
- * @s: string
- * Return: s
+ * *cap_string - function that capitalizes all words of a string
+ * @s: pointer to char input array
+ * Return: @s
  */
 char *cap_string(char *s)
 {
 	int x, y;
 	int trigger;
-	char nots[] = ",;.!?(){}\n\" ";
+	char nots[] = ",;.!?(){}\nt\" ";
 
 	for (x = 0, trigger = 0; s[x] != '\0'; x++)
 	{
