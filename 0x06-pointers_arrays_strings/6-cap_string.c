@@ -4,7 +4,7 @@
  * @s: string
  * Return: s
  */
-char *cap_string(char *)
+char *cap_string(char *s)
 {
 	int x, y;
 	int trigger;
@@ -32,5 +32,5 @@ char *cap_string(char *)
 				trigger = 0;
 		}
 	}
-	return (s)
+	return (s);
 }
