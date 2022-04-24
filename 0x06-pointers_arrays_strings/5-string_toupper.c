@@ -1,4 +1,4 @@
-#include"main.h"
+#include "main.h"
 /**
  * string_toupper - converts string to uppercase
  * @s: string
@@ -15,5 +15,5 @@ char *string_toupper(char *s)
 			s[x] -= 32;
 		}
 	}
-	return (s)
+	return (s);
 }
