@@ -3,7 +3,7 @@
 /**
  * palindromeChecker - checks the string
  *
- * str: the string to be checked
+ * @str: the string to be checked
  * @len: the length of the string
  * @i: the incrementor, starts with 0
  *
