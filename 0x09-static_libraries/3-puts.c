@@ -7,13 +7,13 @@
  * Return: void (success)
  */
 
-void _puts(char *str)
+void _puts(char *s)
 {
 	char *c;
 
 	int m;
 
-	c = str;
+	c = s;
 
 	for (m = 0; c[m]; m++)
 	{
