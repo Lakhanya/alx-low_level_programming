@@ -14,27 +14,25 @@
 
 int main(int argc, char *argv[])
 {
-	int c, d;
-	int n = 0;
+	int total, i;
+	char *p;
+	int num;
 
-	if (argc < 2)
+	total = 0;
+	if (argc > 1)
 	{
-		printf("0\n");
-		return (0);
-	}
-
-	for (c = 1; c < argc; c++)
-	{
-		for (d = 0; argv[c][d] != '\0'; d++)
+		for (i = 1; argv[i]; i++)
 		{
-			if (argv[c][d] < '0' || argv[c][d] < '9')
+			num = strtol(argv[i], &p, 10);
+			if (!*p)
+				total += num;
+			else
 			{
 				printf("Error\n");
 				return (1);
 			}
 		}
-		n += atoi(argv[c]);
 	}
-	printf("%d\n", n);
+	printf("%d\n", total);
 	return (0);
 }
