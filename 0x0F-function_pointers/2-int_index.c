@@ -14,7 +14,7 @@
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int i;
-	int(*p)(int);
+	int (*p)(int);
 
 	p = cmp;
 
