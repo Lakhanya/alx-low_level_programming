@@ -2,7 +2,7 @@
 
 /**
  * __attribute__ ((constructor)) - invoke function before main
- *
+ * @premain: function before main
  */
 void __attribute__ ((constructor)) premain()
 {
