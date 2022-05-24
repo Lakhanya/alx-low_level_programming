@@ -3,19 +3,18 @@
 
 /**
  * print_listint - print all elements of listint_t list
- * @h: linked list head
+ * @h: linked list head to print from
  * Return: number of nodes
  */
 size_t print_listint(const listint_t *h)
 {
-	size_t nbr_nodes = 0;
-	const listint_t *current = h;
+	size_t count = 0;
 
-	while (current != NULL)
+	while (h)
 	{
-		printf("%i\n", current->n);
-		current = current->next;
-		nbr_nodes++;
+		printf("%i\n", h->n);
+		h = h->next;
+		count++;
 	}
-	return (nbr_nodes);
+	return (count);
 }
